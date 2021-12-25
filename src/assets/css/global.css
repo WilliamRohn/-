@@ -5,4 +5,32 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
+  /* -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none; */
+}
+.el-breadcrumb {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+.el-card {
+  box-shadow: 5px 5px 15px rgb(0 0 0 / 15%) !important;
+}
+.el-table {
+  margin-top: 15px;
+  font-size: 14px;
+}
+.el-form-item.is-success .el-input__inner,
+.el-form-item.is-success .el-input__inner:focus,
+.el-form-item.is-success .el-textarea__inner,
+.el-form-item.is-success .el-textarea__inner:focus {
+  border-color: #67c23a;
+}
+.el-form-item.is-success .el-input-group__append .el-input__inner,
+.el-form-item.is-success .el-input-group__prepend .el-input__inner {
+  border-color: transparent;
+}
+.el-form-item.is-success .el-input__validateIcon {
+  color: #67c23a;
 }
