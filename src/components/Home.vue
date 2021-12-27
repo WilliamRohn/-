@@ -3,7 +3,6 @@
     <!-- 头部 -->
     <el-header
       ><div class="header">
-        <!-- <img src="@/assets/potato.png" /> -->
         <svg
           t="1640243278725"
           class="icon"
@@ -161,7 +160,7 @@ export default {
 </script>
 
 <style scoped lang="less">
-.el-container {
+.is-vertical {
   height: 100%;
 }
 .el-header {

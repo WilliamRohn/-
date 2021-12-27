@@ -1,5 +1,5 @@
 <template>
-  <div>huaying</div>
+  <div>欢迎!</div>
 </template>
 
 <script>

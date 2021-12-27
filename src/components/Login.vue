@@ -80,7 +80,7 @@ export default {
         });
       });
     },
-    //重置按钮：重置
+    //重置按钮
     login_reset() {
       this.$refs.loginForm.resetFields();
     },

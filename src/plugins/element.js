@@ -1,11 +1,11 @@
 
 /* 
-1、message、MessageBox不需要使用Vue.use注册
+1、messagee、MessageBox不需要使用Vue.use注册
 但需挂载到Vue.prototype(Vue原型对象上)
 */
 
 import Vue from 'vue';
-import { Aside, Breadcrumb, BreadcrumbItem, Button, Card, Col, Container, Dialog, Form, FormItem, Header, Input, Main, Menu, MenuItem, MenuItemGroup, Message, MessageBox, Pagination, Row, Submenu, Switch, Table, TableColumn, Tooltip } from 'element-ui'
+import { Aside, Breadcrumb, BreadcrumbItem, Button, Card, Col, Container, Dialog, Form, FormItem, Header, Input, Main, Menu, MenuItem, MenuItemGroup, Message, MessageBox, Pagination, Row, Submenu, Switch, Table, TableColumn, Tooltip, Tag, Tree, Select, Option } from 'element-ui'
 
 Vue.use(Button)
 Vue.use(Form)
@@ -30,6 +30,10 @@ Vue.use(Switch)
 Vue.use(Tooltip)
 Vue.use(Pagination)
 Vue.use(Dialog)
+Vue.use(Tag)
+Vue.use(Tree)
+Vue.use(Select)
+Vue.use(Option)
 
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
