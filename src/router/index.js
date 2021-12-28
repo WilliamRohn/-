@@ -35,6 +35,10 @@ const routes = [
         path: '/rights',
         component: () => import('@/components/roles/Rights.vue')
       },
+      {
+        path: '/categories',
+        component: () => import('@/components/goods/Cate.vue')
+      },
     ]
   }
 ]

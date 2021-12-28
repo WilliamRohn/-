@@ -372,11 +372,6 @@ export default {
       if (res.meta.status !== 200) {
         return this.$message.error("获取用户列表失败!");
       } else {
-        // this.$message.success({
-        //   message: "获取用户列表成功!",
-        //   showClose: true,
-        //   duration: 700,
-        // });
         this.userList = res.data.users;
         this.total = res.data.total;
       }
@@ -464,7 +459,6 @@ export default {
         duration: 800,
       });
       this.getUserList();
-      console.log(res);
     },
     // 点击分配角色
     async setRole(userinfo) {

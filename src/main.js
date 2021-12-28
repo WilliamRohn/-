@@ -7,6 +7,8 @@ import 'element-ui/lib/theme-chalk/index.css';
 import '@/assets/css/global.css'
 import '@/assets/fonts/iconfont.css';
 import axios from 'axios';
+// 引入vue-table-with-tree组件
+import TreeTable from 'vue-table-with-tree-grid';
 
 // 设置默认路径、默认请求头使用Authorization字段携带token令牌
 axios.defaults.baseURL = 'http://106.12.6.169:8888/api/private/v1'
@@ -15,8 +17,10 @@ axios.interceptors.request.use(config => {
   config.headers.Authorization = window.sessionStorage.getItem('token')
   return config
 })
+
 Vue.config.productionTip = false
 Vue.prototype.$http = axios
+Vue.component('tree-table', TreeTable)
 
 new Vue({
   router,
