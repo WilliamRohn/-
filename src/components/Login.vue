@@ -3,7 +3,10 @@
     <div class="login_box">
       <!-- 头像区域 -->
       <div class="login_avatar">
-        <img src="../assets/logo.png" alt="" />
+        <img
+          src="../assets/logo.png"
+          alt=""
+        />
       </div>
       <!-- 登录表单 -->
       <el-form
@@ -14,18 +17,30 @@
         ref="loginForm"
         hide-required-asterisk
       >
-        <el-form-item label="用户名:" prop="username">
+        <el-form-item
+          label="用户名:"
+          prop="username"
+        >
           <el-input v-model="formLabelAlign.username"></el-input>
         </el-form-item>
-        <el-form-item label="密码:" prop="password">
+        <el-form-item
+          label="密码:"
+          prop="password"
+        >
           <el-input
             v-model="formLabelAlign.password"
             type="password"
           ></el-input>
         </el-form-item>
         <div class="btn">
-          <el-button type="success" @click="login_">登录</el-button>
-          <el-button type="info" @click="login_reset">重置</el-button>
+          <el-button
+            type="success"
+            @click="login_"
+          >登录</el-button>
+          <el-button
+            type="info"
+            @click="login_reset"
+          >重置</el-button>
         </div>
       </el-form>
     </div>
