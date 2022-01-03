@@ -305,10 +305,6 @@ export default {
         cat_id: "",
         attr_name: "",
       },
-      // 控制可编辑标签显隐
-      // inputVisible: false,
-      // 可编辑标签的内容
-      // inputValue: "",
     };
   },
   methods: {
@@ -323,7 +319,7 @@ export default {
     },
     // 级联选择框选中项变化,会触发这个函数
     async handleChange() {
-      // 不是三级分类
+      // 判断是不是三级分类
       if (this.selectedCateKeys.length !== 3) {
         // 级联选择框置空
         this.selectedCateKeys = [];

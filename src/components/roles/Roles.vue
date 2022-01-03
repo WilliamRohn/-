@@ -108,7 +108,6 @@
           </template>
         </el-table-column>
       </el-table>
-      </el-pagination>
     </el-card>
     <!-- 分配权限对话框 -->
     <el-dialog
