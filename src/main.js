@@ -35,6 +35,7 @@ Vue.filter('dataFormat', function (originVal) {
 
 Vue.config.productionTip = false
 Vue.prototype.$http = axios
+Vue.prototype.$axios = axios
 Vue.component('tree-table', TreeTable)
 
 new Vue({
